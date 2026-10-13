@@ -8,6 +8,11 @@
  * @module
  */
 
+import type * as paypal from "../paypal.js";
+import type * as planLimits from "../planLimits.js";
+import type * as projects from "../projects.js";
+import type * as subscriptions from "../subscriptions.js";
+import type * as tasks from "../tasks.js";
 import type * as workspaces from "../workspaces.js";
 
 import type {
@@ -17,6 +22,11 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  paypal: typeof paypal;
+  planLimits: typeof planLimits;
+  projects: typeof projects;
+  subscriptions: typeof subscriptions;
+  tasks: typeof tasks;
   workspaces: typeof workspaces;
 }>;
 
